@@ -191,6 +191,16 @@ namespace YOLOv8 {
         }
 
         gint class_index = obj_meta->class_id;
+
+        if(class_index == 0) {
+          changeBBoxColor(obj_meta, 1, 0.0, 1.0, 0.0, 0.25);
+        }
+        else if(class_index == 2 || class_index == 3) {
+          changeBBoxColor(obj_meta, 1, 0.0, 0.0, 1.0, 0.25);
+        }
+        else {
+          changeBBoxColor(obj_meta, 1, 1.0, 1.0, 1.0, 0.25);
+        }
       }
       // Add Information to every stream
       addDisplayMeta(batch_meta, frame_meta);
