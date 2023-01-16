@@ -36,3 +36,4 @@ ds-yolov8
 *.engine
 *.onnx
 *.mp4
+inputsources.txt
