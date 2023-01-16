@@ -19,6 +19,7 @@ custom-lib-path=../../custom_parsers/nvds_customparser_yolov8/libnvdsinfer_custo
 
 
 [class-attrs-all]
-nms-iou-threshold=0.45
-pre-cluster-threshold=0.25
-topk=300
+nms-iou-threshold=0.3
+pre-cluster-threshold=0.4
+pre-cluster-threshold=0.3
+topk=1000
