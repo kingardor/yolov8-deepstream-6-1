@@ -56,7 +56,7 @@ docker run -it --rm --net=host --runtime nvidia -e DISPLAY=$DISPLAY -v /tmp/.X11
 ### 1. Build the application
 
 ```sh
-make clean && make -j(nproc)
+make clean && make -j$(nproc)
 ```
 
 ### 2. Start the application
